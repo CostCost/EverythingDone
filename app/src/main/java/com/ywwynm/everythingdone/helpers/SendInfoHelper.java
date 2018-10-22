@@ -34,6 +34,8 @@ import java.util.Date;
 import static com.ywwynm.everythingdone.R.string.days;
 
 /**
+ * 发送相关：发送邮件 发送数据信息 和 错误报告等
+ *
  * Created by ywwynm on 2016/2/13.
  * send information to other apps, like sharing or sending feedback.
  */
@@ -84,6 +86,12 @@ public class SendInfoHelper {
         return title + Thing.getTypeStr(thing.getType(), context);
     }
 
+    /**
+     * 调用系统的应用发送邮件
+     *
+     * @param context
+     * @param attachLogFile
+     */
     @SuppressLint("SimpleDateFormat")
     public static void sendFeedback(Context context, boolean attachLogFile) {
         Intent intent = new Intent();

@@ -11,6 +11,8 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
+ * TODO 获取设备信息
+ *
  * Created by ywwynm on 2016/3/11.
  * utils to get device information.
  */

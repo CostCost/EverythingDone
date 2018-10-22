@@ -15,6 +15,8 @@ import java.text.NumberFormat;
 import java.util.Locale;
 
 /**
+ * TODO 本地化、语言相关的逻辑
+ *
  * Created by ywwynm on 2015/8/3.
  * Helper for localization
  */
@@ -71,6 +73,9 @@ public class LocaleUtil {
         return res.getStringArray(R.array.languages)[index];
     }
 
+    /**
+     * 根据系统的设置修改系统语言
+     */
     public static void changeLanguage() {
         String languageCode = FrequentSettings.getString(
                 Def.Meta.KEY_LANGUAGE_CODE, LANGUAGE_CODE_FOLLOW_SYSTEM + "_");

@@ -12,6 +12,8 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 /**
+ * TODO 设置可以滚动页面的阴影效果
+ *
  * Created by ywwynm on 2015/8/20.
  * Util to set over-scroll color for scrollable views like RecyclerView, ViewPager,
  * ScrollView and etc.

@@ -17,6 +17,9 @@ public class FrequentSettings {
 
     public static final String TAG = "FrequentSettings";
 
+    /**
+     * TODO: 设置信息放在哈希表中，并且在类初始化的时候进行加载
+     */
     private static HashMap<String, Object> settingsMap;
 
     static {
@@ -25,6 +28,9 @@ public class FrequentSettings {
 
     private FrequentSettings() {}
 
+    /**
+     * 初始化的时候直接全部加载所有的用户信息
+     */
     private static void loadFromSharedPreferences() {
         App app = App.getApp();
         SharedPreferences sp = app.getSharedPreferences(

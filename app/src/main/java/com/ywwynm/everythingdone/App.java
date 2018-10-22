@@ -146,11 +146,9 @@ public class App extends Application {
     }
 
     private void firstLaunch() {
-        SharedPreferences metaData = getSharedPreferences(
-                Def.Meta.META_DATA_NAME, MODE_PRIVATE);
+        SharedPreferences metaData = getSharedPreferences(Def.Meta.META_DATA_NAME, MODE_PRIVATE);
         if (metaData.getLong(Def.Meta.KEY_START_USING_TIME, 0) == 0) {
-            metaData.edit().putLong(Def.Meta.KEY_START_USING_TIME,
-                    System.currentTimeMillis()).apply();
+            metaData.edit().putLong(Def.Meta.KEY_START_USING_TIME, System.currentTimeMillis()).apply();
         }
     }
 

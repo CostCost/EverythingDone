@@ -43,6 +43,8 @@ import java.lang.reflect.Method;
 import java.util.Random;
 
 /**
+ * TODO 主题支持 颜色 导航等相关的工具类
+ *
  * Created by ywwynm on 2015/6/28.
  * A helper class to get necessary screen information and update UI with color.
  */
@@ -52,6 +54,7 @@ public class DisplayUtil {
 
     private DisplayUtil() {}
 
+    // region 获取屏幕信息：状态栏 导航栏
     public static float getScreenDensity(Context context) {
         return context.getResources().getDisplayMetrics().density;
     }
@@ -150,7 +153,9 @@ public class DisplayUtil {
 
         return Math.max(res1, res2);
     }
+    // endregion
 
+    // region 颜色处理
     // This method has a sexy history~
     // Someday if you see this code again, wish that your dream had come true
     public static int getRandomColor(Context context) {
@@ -190,6 +195,7 @@ public class DisplayUtil {
         int blue  = Color.blue(color);
         return Color.argb(alpha, red, green, blue);
     }
+    // endregion
 
     /**
      * Play drawer toggle animation(from drawer to arrow and vice versa).
@@ -232,6 +238,7 @@ public class DisplayUtil {
         // ViewCompat.setBackgroundTintList(view, ColorStateList.valueOf(color));
     }
 
+    // region 设置状态栏
     public static void expandLayoutToStatusBarAboveLollipop(Activity activity) {
         if (DeviceUtil.hasLollipopApi()) {
             View decor = activity.getWindow().getDecorView();
@@ -309,6 +316,7 @@ public class DisplayUtil {
             window.setAttributes(lp);
         } catch (Exception ignored) { }
     }
+    // endregion
 
     public static boolean isInMultiWindow(Activity activity) {
         if (DeviceUtil.hasNougatApi()) {
@@ -384,6 +392,8 @@ public class DisplayUtil {
         return (res.getDisplayMetrics().widthPixels - basePadding * 2 * (span + 1)) / span;
     }
 
+    // region 设置控件的主题支持
+
     private static SparseArray<StateListDrawable> sSldMap;
 
     //private static HashMap<Integer, StateListDrawable> sSldMap;
@@ -440,6 +450,7 @@ public class DisplayUtil {
         );
         checkBox.setSupportButtonTintList(colorStateList);
     }
+    // endregion
 
     public static int getCursorY(EditText et) {
         int pos = et.getSelectionStart();

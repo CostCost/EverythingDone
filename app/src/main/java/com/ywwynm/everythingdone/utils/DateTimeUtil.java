@@ -26,6 +26,8 @@ import java.util.GregorianCalendar;
 import static com.ywwynm.everythingdone.R.string.days;
 
 /**
+ * TODO 时间和日期相关的类
+ *
  * Created by ywwynm on 2015/8/27.
  * Helper for formatting datetime and getting information about that.
  */

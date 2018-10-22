@@ -9,6 +9,8 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 
 /**
+ * TODO 软键盘相关的工具类
+ *
  * Created by ywwynm on 2015/7/27.
  * show/hide keyboard and etc
  */

@@ -10,6 +10,8 @@ import android.view.animation.OvershootInterpolator;
 import com.ywwynm.everythingdone.utils.DeviceUtil;
 
 /**
+ * TODO 主题支持的 FAB
+ *
  * Created by ywwynm on 2015/8/16.
  * A custom FloatingActionButton with more animation for appearing/disappearing.
  * It can also attach to a RecyclerView and appear/disappear according to scrolling.

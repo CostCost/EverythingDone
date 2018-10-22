@@ -3,6 +3,8 @@ package com.ywwynm.everythingdone;
 import android.os.Environment;
 
 /**
+ * TODO: 代码很整洁
+ *
  * Created by ywwynm on 2015/5/21.
  * Def for EverythingDone
  */
@@ -31,8 +33,7 @@ public final class Def {
 
         public static final String APP_AUTHORITY = "com.ywwynm.everythingdone";
 
-        public static final String APP_FILE_DIR =
-                Environment.getExternalStorageDirectory().getAbsolutePath() + "/EverythingDone";
+        public static final String APP_FILE_DIR = Environment.getExternalStorageDirectory().getAbsolutePath() + "/EverythingDone";
 
         public static final String FEEDBACK_EMAIL = "everythingdonefeedback@gmail.com";
 

@@ -73,6 +73,7 @@ public abstract class EverythingDoneBaseActivity extends AppCompatActivity {
 
     protected abstract void setEvents();
 
+    // region 权限相关
     private SparseArray<PermissionCallback> mCallbacks;
 
     public void doWithPermissionChecked(
@@ -108,5 +109,5 @@ public abstract class EverythingDoneBaseActivity extends AppCompatActivity {
             callback.onGranted();
         }
     }
-
+    // endregion
 }

@@ -257,6 +257,7 @@ public final class ThingsActivity extends EverythingDoneBaseActivity {
         }
     }
 
+    // region 错误信息报告
     private void tryToShowFeedbackErrorDialog() {
         File file = new File(getApplicationInfo().dataDir + "/files/" +
                 Def.Meta.FEEDBACK_ERROR_FILE_NAME);
@@ -302,6 +303,7 @@ public final class ThingsActivity extends EverythingDoneBaseActivity {
                 Def.Meta.FEEDBACK_ERROR_FILE_NAME);
         FileUtil.deleteFile(file);
     }
+    // endregion
 
     @Override
     protected void onPostResume() {

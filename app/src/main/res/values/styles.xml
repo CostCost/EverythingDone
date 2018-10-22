@@ -106,18 +106,18 @@
     </style>
 
     <style name="ColorPickerAnimation">
-        <item name="@android:windowEnterAnimation">@anim/color_picker_show</item>
-        <item name="@android:windowExitAnimation">@anim/color_picker_hide</item>
+        <item name="android:windowEnterAnimation">@anim/color_picker_show</item>
+        <item name="android:windowExitAnimation">@anim/color_picker_hide</item>
     </style>
 
     <style name="QuickRemindPickerAnimation">
-        <item name="@android:windowEnterAnimation">@anim/quick_remind_picker_show</item>
-        <item name="@android:windowExitAnimation">@anim/quick_remind_picker_hide</item>
+        <item name="android:windowEnterAnimation">@anim/quick_remind_picker_show</item>
+        <item name="android:windowExitAnimation">@anim/quick_remind_picker_hide</item>
     </style>
 
     <style name="TimeTypePickerAnimation">
-        <item name="@android:windowEnterAnimation">@anim/time_type_picker_show</item>
-        <item name="@android:windowExitAnimation">@anim/time_type_picker_hide</item>
+        <item name="android:windowEnterAnimation">@anim/time_type_picker_show</item>
+        <item name="android:windowExitAnimation">@anim/time_type_picker_hide</item>
     </style>
 
     <style name="SelectableItemForeground">

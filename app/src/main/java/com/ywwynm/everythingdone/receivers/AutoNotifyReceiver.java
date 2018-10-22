@@ -35,7 +35,7 @@ public class AutoNotifyReceiver extends BroadcastReceiver {
 
         NotificationCompat.Builder builder = SystemNotificationUtil
                 .newGeneralNotificationBuilder(context, TAG, id, pair.second, thing, true);
-        builder.setContentTitle(context.getString(R.string.auto_notify) + "-" + builder.mContentTitle);
+        builder.setContentTitle(context.getString(R.string.auto_notify) + "-" + "mContentTitle");
         builder.setPriority(Notification.PRIORITY_DEFAULT);
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
         notificationManager.notify((int) id, builder.build());

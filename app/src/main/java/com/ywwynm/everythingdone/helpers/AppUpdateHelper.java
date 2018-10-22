@@ -51,8 +51,7 @@ public class AppUpdateHelper {
     }
 
     public void handleAppUpdate() {
-        SharedPreferences sp = mContext.getSharedPreferences(
-                META_DATA_NAME, Context.MODE_PRIVATE);
+        SharedPreferences sp = mContext.getSharedPreferences(META_DATA_NAME, Context.MODE_PRIVATE);
 
         updateFrom1_0_3To1_0_4(sp);
     }

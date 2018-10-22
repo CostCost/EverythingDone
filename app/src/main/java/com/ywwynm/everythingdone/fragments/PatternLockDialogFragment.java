@@ -16,6 +16,9 @@ import com.ywwynm.everythingdone.views.PatternLockView;
 import java.util.List;
 
 /**
+ * TODO 图案密码设置对话框
+ * 直接使用图案密码返回的文字进行存储
+ *
  * Created by ywwynm on 2016/5/23.
  * A dialog fragment provides pattern lock/unlock user interface including set and validate
  * pattern.

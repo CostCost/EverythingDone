@@ -14,6 +14,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
+ * TODO 图片处理相关的类
+ *
  * Created by ywwynm on 2015/9/23.
  * Utils for Bitmap
  */
